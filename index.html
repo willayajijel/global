@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منصة متابعة المشاريع التنموية — ولاية جيجل</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ════ BACKGROUND ════ -->
+<div class="bg-layer"></div>
+
+<!-- ════ HEADER ════ -->
+<header>
+  <div class="header-strip"></div>
+  <div class="header-top">
+    <div class="flag-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Animated-Flag-Algeria.gif" alt="العلم"
+           onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2296%22 height=%2264%22><rect width=%2248%22 height=%2264%22 fill=%22%23006233%22/><rect x=%2248%22 width=%2248%22 height=%2264%22 fill=%22white%22/></svg>'">
+    </div>
+    <div class="republic-block">
+      <div class="top-line">الجُمهُورِيَّة الجَزَائِرِيَّة الدِّيمُقرَاطِيَّة الشَّعبِيَّة</div>
+      <div class="wilaya-line">✦ وِلَايَةُ جِيجَل ✦</div>
+    </div>
+    <div class="header-photos">
+      <div class="photo-frame">
+        <div class="photo-frame-ring">
+          <img src="https://i.ibb.co/SXBmb37y/571436558-1191542629695954-5937237323564308526-n.jpg" alt="السيد الوالي" onerror="this.style.background='#1a3560'">
+        </div>
+        <div class="wali-tag">السيد أحمد مقلاتي</div>
+        <span>والي ولاية جيجل</span>
+      </div>
+      <div class="photo-sep"></div>
+      <div class="photo-frame">
+        <div class="photo-frame-ring">
+          <img src="https://i.ibb.co/nsnZLr8H/64322275-2277233219158290-8858728415776210944-n.jpg" alt="ولاية جيجل" onerror="this.style.background='#1a3560'">
+        </div>
+        <span>ولاية جيجل</span>
+      </div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="platform-title">
+      <div class="lbl">🏗️ المنصة الرقمية الرسمية</div>
+      <h1>منصة متابعة <span>المشاريع التنموية</span></h1>
+    </div>
+    <div class="header-stats">
+      <div class="stat-badge"><span class="num">950</span><span class="lbl">ألف نسمة</span></div>
+      <div class="stat-badge"><span class="num" id="hdr-munis">28</span><span class="lbl">بلدية</span></div>
+      <div class="stat-badge"><span class="num">11</span><span class="lbl">دائرة</span></div>
+      <div class="stat-badge"><span class="num">3586</span><span class="lbl">كم²</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ════ NAVIGATION ════ -->
+<nav class="nav-bar">
+  <a class="active" onclick="showSection('home')">🏠 الرئيسية</a>
+  <a onclick="showSection('dashboard')">📊 لوحة المتابعة</a>
+  <a onclick="showSection('municipalities')">🏘️ البلديات</a>
+  <a onclick="showSection('projects')">📁 المشاريع</a>
+  <a onclick="showSection('statistics')">📈 الإحصائيات</a>
+  <a onclick="showSection('contact')">📞 التواصل</a>
+</nav>
+
+<!-- ════ TICKER BAR — شريط الإعلانات ════ -->
+<div class="ticker-wrap">
+  <div class="ticker-label">
+    <div class="ticker-label-dot"></div>
+    <span>إعلانات</span>
+  </div>
+  <div class="ticker-track" dir="ltr">
+    <div class="ticker-inner" id="ticker-inner">
+      <span class="ticker-item">⏰ آخر أجل لإيداع ملفات التسجيل هو يوم <strong style="color:var(--gold-light);">01 جوان 2026</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">📅 تم تأجيل اجتماع المجلس التنفيذي للولاية إلى يوم <strong style="color:#60a5fa;">15 جوان 2026</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">🚫 تم إدراج مقاولة الإنجاز <strong style="color:#f87171;">"عمور للأشغال العامة"</strong> في القائمة السوداء من <strong style="color:#f87171;">01 جوان 2026</strong> إلى <strong style="color:#f87171;">31 ديسمبر 2026</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">📢 تذكير: الموعد النهائي لتحميل تقارير المتابعة الفصلية هو <strong style="color:var(--gold-light);">30 جوان 2026</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">🏗️ انطلاق أشغال مشروع الطريق الولائي رقم 43 ربط <strong style="color:#4ade80;">جيجل — الميلية</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">⏰ آخر أجل لإيداع ملفات التسجيل هو يوم <strong style="color:var(--gold-light);">01 جوان 2026</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">📅 تم تأجيل اجتماع المجلس التنفيذي للولاية إلى يوم <strong style="color:#60a5fa;">15 جوان 2026</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">🚫 تم إدراج مقاولة الإنجاز <strong style="color:#f87171;">"عمور للأشغال العامة"</strong> في القائمة السوداء من <strong style="color:#f87171;">01 جوان 2026</strong> إلى <strong style="color:#f87171;">31 ديسمبر 2026</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">📢 تذكير: الموعد النهائي لتحميل تقارير المتابعة الفصلية هو <strong style="color:var(--gold-light);">30 جوان 2026</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">🏗️ انطلاق أشغال مشروع الطريق الولائي رقم 43 ربط <strong style="color:#4ade80;">جيجل — الميلية</strong></span>
+      <span class="ticker-sep">◆</span>
+    </div>
+  </div>
+</div>
+
+<!-- ════ COMMAND CENTER STRIP — شريط التحديثات ════ -->
+<div class="cmd-strip" id="cmd-strip">
+  <div class="cmd-group">
+    <div class="cmd-item">
+      <span class="ci-dot online"></span>
+      <span class="ci-icon">🖥️</span>
+      <span>حالة السيرفر:</span>
+      <span class="ci-val" id="cmd-server-status">متصل ✓</span>
+    </div>
+    <div class="cmd-item">
+      <span class="ci-icon">🏘️</span>
+      <span>البلديات النشطة:</span>
+      <span class="ci-val" id="cmd-active-munis">—</span>
+    </div>
+    <div class="cmd-item cmd-item-clickable" onclick="scrollToUpdates()" title="اضغط للوصول إلى آخر التحديثات">
+      <span class="ci-icon">🔄</span>
+      <span>تحديثات اليوم:</span>
+      <span class="ci-val" id="cmd-ops-today" style="color:#4ade80;">—</span>
+      <span style="font-size:0.6rem;color:var(--gold);margin-right:4px;">↗</span>
+    </div>
+  </div>
+  <div class="cmd-group">
+    <div class="live-update-badge" style="cursor:pointer;" onclick="openOpsListByFilter({})" title="عرض كل العمليات المحدّثة">
+      <div class="lub-dot"></div>
+      <span style="font-size:0.7rem;color:#4ade80;font-weight:700;">آخر تحديث: </span>
+      <span id="cmd-last-update" style="font-size:0.7rem;color:var(--text-muted);">—</span>
+      <span style="font-size:0.6rem;color:var(--gold);margin-right:4px;">↗</span>
+    </div>
+    <div class="cmd-weather" id="cmd-weather-widget" title="الطقس في جيجل">
+      <span id="cmd-weather-icon" style="font-size:1.2rem;">⛅</span>
+      <div>
+        <div class="cw-temp" id="cmd-weather-temp">—°م</div>
+        <div class="cw-desc" id="cmd-weather-desc">جيجل</div>
+      </div>
+    </div>
+    <div class="cmd-clock">
+      <div class="cc-time" id="cmd-clock-time">00:00:00</div>
+      <div class="cc-date" id="cmd-clock-date">—</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ MAIN CONTENT ════ -->
+<main>
+
+<!-- ════ HOME ════ -->
+<div id="section-home">
+  <div class="banner-2026">
+    <div class="banner-2026-header">
+      <div class="dot"></div>
+      <h3 id="banner-title">📊 إحصائيات البرنامج التنموي للولاية</h3>
+      <div class="line"></div>
+      <span class="badge" id="banner-update-badge">⏳ جاري التحميل…</span>
+    </div>
+    <div class="banner-year-tabs" id="banner-year-tabs">
+      <button class="byt" onclick="switchBannerYear('2022',this)">2022</button>
+      <button class="byt" onclick="switchBannerYear('2023',this)">2023</button>
+      <button class="byt" onclick="switchBannerYear('2024',this)">2024</button>
+      <button class="byt" onclick="switchBannerYear('2025',this)">2025</button>
+      <button class="byt active-2026 active" onclick="switchBannerYear('2026',this)">2026 🔴 مباشر</button>
+    </div>
+    <div class="banner-stats">
+      <div class="banner-stat" style="background:rgba(0,98,51,0.1);border:1px solid rgba(0,168,78,0.2);border-top-color:#4ade80;" onclick="openOpsListByFilter({})">
+        <div class="ico">🏗️</div>
+        <div class="val" id="bs-total" style="color:#4ade80;">—</div>
+        <div class="lbl">إجمالي العمليات — اضغط لعرضها</div>
+      </div>
+      <div class="banner-stat" style="background:rgba(30,95,168,0.1);border:1px solid rgba(37,99,235,0.2);border-top-color:#60a5fa;">
+        <div class="ico">💰</div>
+        <div class="val" id="bs-budget" style="color:#60a5fa;font-size:1.6rem;">—</div>
+        <div class="lbl">الغلاف المالي الإجمالي (دج)</div>
+      </div>
+      <div class="banner-stat" style="background:rgba(124,58,237,0.1);border:1px solid rgba(139,92,246,0.2);border-top-color:#a78bfa;">
+        <div class="ico">📈</div>
+        <div class="val" id="bs-progress" style="color:#a78bfa;">—</div>
+        <div class="lbl">متوسط نسبة الإنجاز</div>
+        <div class="bar"><div class="bar-f" id="bs-progress-bar" style="background:#a78bfa;width:0%"></div></div>
+      </div>
+      <div class="banner-stat" style="background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.2);border-top-color:var(--gold);">
+        <div class="ico">📉</div>
+        <div class="val" id="bs-consume" style="color:var(--gold-light);">—</div>
+        <div class="lbl">نسبة الاستهلاك المالي</div>
+        <div class="bar"><div class="bar-f" id="bs-consume-bar" style="background:var(--gold);width:0%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero-section">
+    <div class="wali-full-card">
+      <div class="wali-cinema">
+        <img src="https://i.ibb.co/SXBmb37y/571436558-1191542629695954-5937237323564308526-n.jpg" alt="السيد الوالي"
+             onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22420%22><rect width=%22800%22 height=%22420%22 fill=%22%231a3560%22/></svg>'">
+        <div class="wali-top-badge">
+          <div class="dot"></div>
+          <span>✦ السيــد/  أحمــد مقلاتـي  والــي ولايــة جيجــل</span>
+        </div>
+        <div class="wali-left-overlay">
+          <div class="quote-label">✦ كلمة السيد الوالي  لرؤساء المجالس الشعبية البلدية</div>
+          <div class="wali-quote-collapsed" id="wali-quote-wrap">
+          <div class="wali-quote-text">
+السيدات والسادة رؤساء المجالس الشعبية البلدية،
+
+نحن اليوم أمام مرحلة تتطلب منا جميعًا المزيد من الجدية، الحضور الميداني، والمتابعة اليومية لمختلف العمليات التنموية المسجلة عبر بلديات الولاية، خاصة وأننا نقترب من نهاية السنة المالية، وهي محطة حاسمة لتقييم مدى قدرتنا على تجسيد البرامج وتحقيق تطلعات المواطنين على أرض الواقع.
+
+إنّ الدولة سخّرت أغلفة مالية معتبرة لفائدة التنمية المحلية، ووفرت كل الإمكانيات الضرورية من أجل تحسين الإطار المعيشي للمواطن، وعليه فإن مسؤوليتنا الجماعية تقتضي تسريع وتيرة الإنجاز، رفع العراقيل، والمتابعة الدقيقة للمشاريع قصد ضمان استهلاك كلي وفعّال للاعتمادات المالية المرصودة لكل بلدية، مع الحرص على الجودة واحترام الآجال التعاقدية.
+
+كما نؤكد أن البلديات التي ستُظهر ديناميكية حقيقية، ونجاعة في التسيير، وتحقق نسب إنجاز واستهلاك معتبرة، ستكون محل مرافقة وتحفيز إضافي من خلال الاستفادة من عمليات ومشاريع تنموية جديدة مستقبلاً، تشجيعًا للمجهودات المبذولة وتحفيزًا لروح المبادرة والعمل الميداني.
+
+وفي المقابل، فإن البلديات التي تعرف تأخرًا غير مبرر، أو ضعفًا في المتابعة واستهلاك الاعتمادات، ستتحمل مسؤوليتها كاملة، وقد يتم إعادة النظر في برمجتها المستقبلية وتوجيه الأولوية للبلديات الأكثر جاهزية وفعالية.
+
+ثقتنا كبيرة في حسّكم المسؤول، وفي قدرتكم على رفع التحدي، والعمل بروح الفريق الواحد من أجل تحقيق تنمية حقيقية ومتوازنة تعود بالنفع على مواطنينا عبر كافة بلديات
+          </div>
+          <div class="quote-fade" id="wali-quote-fade"></div>
+          </div>
+          <button class="btn-read-more" id="btn-read-more" onclick="toggleWaliQuote()">📖 قراءة الرسالة كاملة ▼</button>
+          <div class="wali-quote-sig">— وفقنا الله جميعًا لما فيه خدمة الصالح العام.</div>
+        </div>
+        <div class="wali-name-strip" style="display:flex;justify-content:flex-end;width:100%;">
+          <div class="name" style="text-align:left;font-size:1rem;">وفقنا الله جميعًا لما فيه خدمة الصالح العام</div>
+        </div>
+      </div>
+      <div class="wali-kpi-bar">
+        <div class="wkb-item"><span class="wkb-val" id="wqk-ops" style="color:#4ade80;">—</span><span class="wkb-lbl">عملية 2026</span></div>
+        <div class="wkb-item"><span class="wkb-val" id="wqk-prog" style="color:var(--gold-light);">—</span><span class="wkb-lbl">نسبة الإنجاز</span></div>
+        <div class="wkb-item"><span class="wkb-val" id="wqk-fin" style="color:#f87171;">—</span><span class="wkb-lbl">استهلاك مالي</span></div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="daira-panel">
+        <div class="daira-panel-header">
+          <h4>📍 دوائر ولاية جيجل</h4>
+          <span style="font-size:0.68rem;color:var(--text-muted);">11 دائرة</span>
+        </div>
+        <div class="daira-mini-list" id="daira-list"></div>
+        <button class="btn-all-munis" onclick="showSection('municipalities')">🏘️ استعراض كل البلديات</button>
+      </div>
+      <div class="sidebar-year-panel">
+        <div class="syp-header">
+          <div class="syp-dot"></div>
+          <span style="font-size:0.85rem;font-weight:700;color:var(--gold-light);">📅 ملخص السنوات</span>
+        </div>
+        <div class="syp-tabs" id="sidebar-year-tabs">
+          <button class="syp-tab" onclick="sidebarSwitchYear('2022',this)">2022</button>
+          <button class="syp-tab" onclick="sidebarSwitchYear('2023',this)">2023</button>
+          <button class="syp-tab" onclick="sidebarSwitchYear('2024',this)">2024</button>
+          <button class="syp-tab" onclick="sidebarSwitchYear('2025',this)">2025</button>
+          <button class="syp-tab active" onclick="sidebarSwitchYear('2026',this)">2026</button>
+        </div>
+        <div class="syp-body" id="sidebar-year-body"></div>
+        <div class="syp-footer">
+          <button onclick="showSection('dashboard')" style="width:100%;background:linear-gradient(135deg,rgba(201,168,76,0.15),rgba(201,168,76,0.08));border:1px solid rgba(201,168,76,0.3);color:var(--gold-light);border-radius:10px;padding:9px;font-family:'Cairo',sans-serif;font-size:0.83rem;font-weight:700;cursor:pointer;transition:all 0.2s;">
+            📊 لوحة المتابعة الكاملة ↗
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ ALERT CENTER ════ -->
+  <section class="alert-center" id="alert-center-section">
+    <div class="alert-center-header">
+      <div style="width:9px;height:9px;border-radius:50%;background:#f87171;box-shadow:0 0 10px rgba(248,113,113,0.7);flex-shrink:0;animation:pulse 1.5s infinite;"></div>
+      <h2>🚨 مركز التنبيهات</h2>
+      <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(210,16,52,0.3),transparent);"></div>
+      <span class="alert-count-badge" id="alert-count-badge">⏳ جاري الفحص…</span>
+    </div>
+    <div class="alerts-grid" id="alerts-grid">
+      <div style="grid-column:1/-1;text-align:center;padding:24px;color:var(--text-muted);">
+        <div style="width:32px;height:32px;border:3px solid rgba(248,113,113,0.2);border-top-color:#f87171;border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 10px;"></div>
+        <div style="font-size:0.8rem;">جاري تحليل البيانات وكشف التنبيهات…</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ TOP 3 PERFORMERS ════ -->
+  <section class="top-performers" id="top-performers-section">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+      <div style="width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px rgba(201,168,76,0.7);flex-shrink:0;"></div>
+      <h2 style="font-family:'Amiri',serif;font-size:1.2rem;color:var(--gold-light);">🏆 أفضل البلديات أداءً</h2>
+      <div style="flex:1;height:1px;background:linear-gradient(90deg,var(--gold-dark),transparent);"></div>
+      <span style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);color:var(--gold);font-size:0.7rem;font-weight:700;padding:3px 12px;border-radius:20px;" id="top3-year-badge">2026 🔴 مباشر</span>
+    </div>
+    <div class="top3-grid" id="top3-grid">
+      <div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--text-muted);">
+        <div style="width:32px;height:32px;border:3px solid rgba(201,168,76,0.2);border-top-color:var(--gold);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 10px;"></div>
+        <div style="font-size:0.8rem;">⏳ جاري تحميل البيانات…</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-programs-section" id="home-programs-section">
+    <div class="home-programs-header">
+      <div style="width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px rgba(201,168,76,0.7);flex-shrink:0;"></div>
+      <h2>🏛️ مصادر التمويل والبرامج التنموية — <span id="home-prog-year">2026</span></h2>
+      <div class="line"></div>
+      <div id="home-prog-badge" style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.22);color:var(--gold-light);font-size:0.73rem;font-weight:700;padding:5px 14px;border-radius:20px;">⏳ جاري التحميل</div>
+    </div>
+    <div class="prog-showcase-grid" id="home-prog-grid"></div>
+    <div class="prog-finance-strip">
+      <div class="pfs-card">
+        <div class="pfs-icon">💰</div>
+        <div class="pfs-info">
+          <div class="pfs-val" id="hpfs-budget" style="color:var(--gold-light);">—</div>
+          <div class="pfs-lbl">الغلاف المالي الإجمالي (دج)</div>
+        </div>
+      </div>
+      <div class="pfs-card">
+        <div class="pfs-icon">📈</div>
+        <div class="pfs-info" style="flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
+            <div class="pfs-lbl">المستهلك من الاعتمادات</div>
+            <div class="pfs-val" id="hpfs-consumed" style="color:#4ade80;font-size:1rem;">—</div>
+          </div>
+          <div class="pfs-bar-wrap"><div class="pfs-bar-fill" id="hpfs-consumed-bar" style="background:linear-gradient(90deg,var(--green),#4ade80);width:0%;height:100%;border-radius:99px;"></div></div>
+        </div>
+      </div>
+      <div class="pfs-card">
+        <div class="pfs-icon">⚙️</div>
+        <div class="pfs-info" style="flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
+            <div class="pfs-lbl">متوسط نسبة الإنجاز</div>
+            <div class="pfs-val" id="hpfs-progress" style="color:#a78bfa;font-size:1rem;">—</div>
+          </div>
+          <div class="pfs-bar-wrap"><div class="pfs-bar-fill" id="hpfs-progress-bar" style="background:linear-gradient(90deg,#7c3aed,#a78bfa);width:0%;height:100%;border-radius:99px;"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-muni-section">
+    <div class="home-muni-header">
+      <div style="width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px rgba(201,168,76,0.7);flex-shrink:0;"></div>
+      <h2>🏘️ بلديات الولاية — اضغط لعرض مشاريع كل بلدية</h2>
+      <div class="line"></div>
+      <div class="click-badge">👆 اضغط على البلدية</div>
+    </div>
+    <div class="daira-filter-row" id="home-daira-filter">
+      <button class="daira-btn-home active" onclick="homeFilterDaira('all',this)">الكل</button>
+    </div>
+    <div class="home-muni-grid" id="home-muni-grid"></div>
+  </section>
+</div>
+
+<!-- ════ DASHBOARD ════ -->
+<div id="section-dashboard" style="display:none;">
+  <div class="section-title">
+    <div class="dot"></div>
+    <h2>📊 الحالة العامة للمشاريع التنموية</h2>
+    <div class="line"></div>
+  </div>
+  <div class="year-tabs" id="year-tabs"></div>
+  <div id="year-panels"></div>
+</div>
+
+<!-- ════ MUNICIPALITIES ════ -->
+<div id="section-municipalities" style="display:none;">
+  <div class="section-title">
+    <div class="dot"></div>
+    <h2>🏘️ بلديات ولاية جيجل</h2>
+    <div class="line"></div>
+  </div>
+  <div class="muni-search-row">
+    <div class="muni-search">
+      <span style="color:var(--text-muted);">🔍</span>
+      <input type="text" id="muni-search-input" placeholder="ابحث عن بلدية..." oninput="filterMunis()">
+    </div>
+    <div class="muni-count-badge" id="muni-count-badge">28 بلدية</div>
+  </div>
+  <div class="daira-filter" id="daira-filter">
+    <button class="daira-btn active" onclick="filterByDaira('all',this)">الكل</button>
+  </div>
+  <div class="muni-grid" id="muni-grid"></div>
+</div>
+
+<!-- ════ PROJECTS ════ -->
+<div id="section-projects" style="display:none;">
+  <div class="section-title">
+    <div class="dot"></div>
+    <h2>📁 المشاريع — البرامج التنموية</h2>
+    <div class="line"></div>
+  </div>
+  <div class="proj-year-bar" id="proj-year-bar">
+    <span style="font-size:0.85rem;font-weight:700;color:var(--text-muted);">📅 السنة:</span>
+    <button class="proj-year-btn" onclick="switchProjYear('2022',this)">2022</button>
+    <button class="proj-year-btn" onclick="switchProjYear('2023',this)">2023</button>
+    <button class="proj-year-btn" onclick="switchProjYear('2024',this)">2024</button>
+    <button class="proj-year-btn" onclick="switchProjYear('2025',this)">2025</button>
+    <button class="proj-year-btn active" onclick="switchProjYear('2026',this)">2026 🔴</button>
+  </div>
+  <div style="display:flex;gap:12px;margin-bottom:28px;flex-wrap:wrap;" id="proj-tabs-row">
+    <button id="proj-tab-adsec" onclick="switchProjTab('adsec')" class="year-tab active" style="background:linear-gradient(135deg,#006233,#00a84e);border-color:#4ade80;color:#fff;">🏗️ ADSEC</button>
+    <button id="proj-tab-csgcl" onclick="switchProjTab('csgcl')" class="year-tab">🏦 CSGCL</button>
+    <button id="proj-tab-fs" onclick="switchProjTab('fs')" class="year-tab">💼 FS</button>
+    <button id="proj-tab-bw" onclick="switchProjTab('bw')" class="year-tab">🏛️ BW</button>
+  </div>
+  <div id="proj-panel-adsec"><div id="adsec-inner"></div></div>
+  <div id="proj-panel-csgcl" style="display:none;"><div id="csgcl-inner"></div></div>
+  <div id="proj-panel-fs" style="display:none;"><div id="fs-inner"></div></div>
+  <div id="proj-panel-bw" style="display:none;"><div id="bw-inner"></div></div>
+</div>
+
+<!-- ════ STATISTICS ════ -->
+<div id="section-statistics" style="display:none;">
+  <div class="section-title">
+    <div class="dot"></div>
+    <h2>📈 الإحصائيات — ترتيب البلديات حسب الاستهلاك</h2>
+    <div class="line"></div>
+  </div>
+  <div style="margin-bottom:20px;">
+    <div style="font-size:0.9rem;font-weight:700;color:var(--gold-light);margin-bottom:10px;">① اختر السنة:</div>
+    <div class="stat-selectors" id="stat-year-btns">
+      <button class="stat-year-btn" onclick="statSelectYear('2022',this)">2022</button>
+      <button class="stat-year-btn" onclick="statSelectYear('2023',this)">2023</button>
+      <button class="stat-year-btn" onclick="statSelectYear('2024',this)">2024</button>
+      <button class="stat-year-btn" onclick="statSelectYear('2025',this)">2025</button>
+      <button class="stat-year-btn active" onclick="statSelectYear('2026',this)">2026 🔴</button>
+    </div>
+  </div>
+  <div style="margin-bottom:28px;">
+    <div style="font-size:0.9rem;font-weight:700;color:var(--gold-light);margin-bottom:10px;">② اختر البرنامج:</div>
+    <div class="stat-selectors" id="stat-prog-btns">
+      <button class="stat-prog-btn active-adsec" onclick="statSelectProg('adsec',this)">🏗️ ADSEC</button>
+      <button class="stat-prog-btn" onclick="statSelectProg('csgcl',this)">🏦 CSGCL</button>
+      <button class="stat-prog-btn" onclick="statSelectProg('fs',this)">💼 FS</button>
+      <button class="stat-prog-btn" onclick="statSelectProg('bw',this)">🏛️ BW</button>
+      <button class="stat-prog-btn" onclick="statSelectProg('both',this)">🏆 الكل</button>
+    </div>
+  </div>
+  <div id="stat-ranking-panel"><div style="text-align:center;padding:50px;color:var(--text-muted);">⏳ جاري تحميل البيانات…</div></div>
+</div>
+
+<!-- ════ CONTACT ════ -->
+<div id="section-contact" style="display:none;">
+  <div class="section-title"><div class="dot"></div><h2>📞 تواصل معنا</h2><div class="line"></div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:32px;">
+    <!-- COLUMN 1: Contact Info -->
+    <div style="background:rgba(14,20,34,0.97);border:1px solid var(--dark-border);border-radius:var(--radius);overflow:hidden;">
+      <div style="background:linear-gradient(135deg,rgba(0,98,51,0.22),rgba(14,20,34,0.97));padding:14px 20px;border-bottom:1px solid var(--dark-border);display:flex;align-items:center;gap:10px;">
+        <div style="width:8px;height:8px;border-radius:50%;background:#4ade80;animation:pulse 2s infinite;"></div>
+        <span style="font-family:'Amiri',serif;font-size:1rem;font-weight:700;color:var(--gold-light);">معلومات الاتصال</span>
+      </div>
+      <div>
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.04);">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(0,98,51,0.15);border:1px solid rgba(0,168,78,0.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">📍</div>
+          <div>
+            <div style="font-size:0.68rem;color:#4ade80;margin-bottom:4px;font-weight:700;letter-spacing:1px;">العنوان</div>
+            <div style="font-size:0.9rem;color:#fff;font-weight:600;">ولاية جيجل، الجزائر</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.04);">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.22);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">📞</div>
+          <div>
+            <div style="font-size:0.68rem;color:var(--gold);margin-bottom:4px;font-weight:700;letter-spacing:1px;">الهاتف</div>
+            <a href="tel:+213034474167" style="font-size:0.9rem;color:var(--gold-light);text-decoration:none;font-weight:700;direction:ltr;display:inline-block;">034 47 41 67</a>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.04);">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(124,58,237,0.15);border:1px solid rgba(139,92,246,0.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🌐</div>
+          <div>
+            <div style="font-size:0.68rem;color:#a78bfa;margin-bottom:4px;font-weight:700;letter-spacing:1px;">الموقع الرسمي</div>
+            <a href="http://www.wilaya-jijel.dz/" target="_blank" style="font-size:0.9rem;color:#a78bfa;text-decoration:none;font-weight:700;">www.wilaya-jijel.dz</a>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.04);">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(29,78,216,0.15);border:1px solid rgba(59,130,246,0.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">📘</div>
+          <div>
+            <div style="font-size:0.68rem;color:#60a5fa;margin-bottom:4px;font-weight:700;letter-spacing:1px;">الصفحة الرسمية — فيسبوك</div>
+            <a href="https://www.facebook.com/WilayaJijel00018/" target="_blank" style="font-size:0.88rem;color:#60a5fa;text-decoration:none;font-weight:700;">WilayaJijel00018</a>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:14px 20px;">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.22);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">👨‍💻</div>
+          <div>
+            <div style="font-size:0.68rem;color:var(--gold);margin-bottom:4px;font-weight:700;letter-spacing:1px;">مطوّر المنصة</div>
+            <div style="font-size:0.9rem;color:var(--gold-light);font-weight:700;">صالح عمّور</div>
+            <a href="tel:+213799340844" style="font-size:0.78rem;color:var(--text-muted);text-decoration:none;direction:ltr;display:inline-block;margin-top:2px;">+213 799 340 844</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- COLUMN 2: Map -->
+    <div style="background:rgba(14,20,34,0.97);border:1px solid var(--dark-border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;">
+      <div style="background:linear-gradient(135deg,rgba(8,145,178,0.2),rgba(14,20,34,0.97));padding:14px 20px;border-bottom:1px solid var(--dark-border);display:flex;align-items:center;gap:10px;">
+        <div style="width:8px;height:8px;border-radius:50%;background:#38bdf8;box-shadow:0 0 8px rgba(56,189,248,0.6);"></div>
+        <span style="font-family:'Amiri',serif;font-size:1rem;font-weight:700;color:var(--gold-light);">الموقع الجغرافي</span>
+        <a href="https://maps.app.goo.gl/efdQWTbjxJZLLDM5A" target="_blank" style="margin-right:auto;font-size:0.7rem;color:#38bdf8;text-decoration:none;background:rgba(8,145,178,0.12);border:1px solid rgba(8,145,178,0.25);border-radius:20px;padding:3px 10px;">↗ فتح في Google Maps</a>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.452!2d5.7658!3d36.8206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f19c1234abcdef%3A0x0!2zV2lsYXlhIG9mIEppamVs!5e0!3m2!1sar!2sdz!4v1"
+        style="width:100%;flex:1;min-height:380px;border:none;display:block;" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <!-- COLUMN 3: Quick Links + Platform Stats -->
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div style="background:rgba(14,20,34,0.97);border:1px solid var(--dark-border);border-radius:var(--radius);overflow:hidden;">
+        <div style="background:linear-gradient(135deg,rgba(201,168,76,0.15),rgba(14,20,34,0.97));padding:14px 20px;border-bottom:1px solid var(--dark-border);display:flex;align-items:center;gap:10px;">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite;"></div>
+          <span style="font-family:'Amiri',serif;font-size:1rem;font-weight:700;color:var(--gold-light);">روابط سريعة</span>
+        </div>
+        <div style="padding:14px 16px;display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <a href="http://www.wilaya-jijel.dz/" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:7px;background:rgba(124,58,237,0.1);border:1px solid rgba(139,92,246,0.2);border-radius:12px;padding:14px 10px;text-decoration:none;color:#a78bfa;font-size:0.78rem;font-weight:700;text-align:center;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''"><span style="font-size:1.5rem;">🌐</span>الموقع الرسمي</a>
+          <a href="https://www.facebook.com/WilayaJijel00018/" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:7px;background:rgba(29,78,216,0.1);border:1px solid rgba(59,130,246,0.2);border-radius:12px;padding:14px 10px;text-decoration:none;color:#60a5fa;font-size:0.78rem;font-weight:700;text-align:center;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''"><span style="font-size:1.5rem;">📘</span>فيسبوك</a>
+          <a href="https://maps.app.goo.gl/efdQWTbjxJZLLDM5A" target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:7px;background:rgba(8,145,178,0.1);border:1px solid rgba(8,145,178,0.2);border-radius:12px;padding:14px 10px;text-decoration:none;color:#38bdf8;font-size:0.78rem;font-weight:700;text-align:center;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''"><span style="font-size:1.5rem;">🗺️</span>خرائط جوجل</a>
+          <a href="tel:+213034474167" style="display:flex;flex-direction:column;align-items:center;gap:7px;background:rgba(0,98,51,0.1);border:1px solid rgba(0,168,78,0.2);border-radius:12px;padding:14px 10px;text-decoration:none;color:#4ade80;font-size:0.78rem;font-weight:700;text-align:center;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''"><span style="font-size:1.5rem;">📞</span>اتصل بنا</a>
+        </div>
+      </div>
+      <div style="background:rgba(14,20,34,0.97);border:1px solid var(--dark-border);border-radius:var(--radius);overflow:hidden;flex:1;">
+        <div style="background:linear-gradient(135deg,rgba(0,98,51,0.2),rgba(14,20,34,0.97));padding:14px 20px;border-bottom:1px solid var(--dark-border);display:flex;align-items:center;gap:10px;">
+          <div style="width:8px;height:8px;border-radius:50%;background:#4ade80;animation:pulse 1.5s infinite;"></div>
+          <span style="font-family:'Amiri',serif;font-size:1rem;font-weight:700;color:var(--gold-light);">حول المنصة</span>
+        </div>
+        <div style="padding:18px 20px;">
+          <div style="font-size:0.82rem;color:var(--text-light);line-height:1.9;margin-bottom:16px;">منصة متابعة المشاريع التنموية لولاية جيجل هي أداة رقمية متكاملة تتيح متابعة المشاريع التنموية في مختلف بلديات الولاية في الوقت الفعلي.</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;">
+            <div style="background:rgba(0,98,51,0.1);border:1px solid rgba(0,98,51,0.2);border-radius:10px;padding:10px;text-align:center;"><div style="font-size:1.3rem;font-weight:900;color:#4ade80;" id="contact-munis-count">28</div><div style="font-size:0.65rem;color:var(--text-muted);">بلدية</div></div>
+            <div style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.18);border-radius:10px;padding:10px;text-align:center;"><div style="font-size:1.3rem;font-weight:900;color:var(--gold-light);" id="contact-ops-count">—</div><div style="font-size:0.65rem;color:var(--text-muted);">عملية تنموية</div></div>
+          </div>
+          <div style="background:rgba(0,98,51,0.08);border:1px solid rgba(0,168,78,0.15);border-radius:10px;padding:10px 14px;display:flex;align-items:center;gap:8px;">
+            <div style="width:6px;height:6px;border-radius:50%;background:#4ade80;animation:pulse 1.5s infinite;flex-shrink:0;"></div>
+            <span style="font-size:0.75rem;color:#4ade80;font-weight:700;">🔴 تحديث مباشر من Firebase</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background:rgba(14,20,34,0.97);border:1px solid var(--dark-border);border-radius:var(--radius);overflow:hidden;animation:fadeUp 0.7s 0.2s both;">
+    <div style="background:linear-gradient(135deg,rgba(0,98,51,0.18),rgba(14,20,34,0.97));padding:14px 22px;border-bottom:1px solid var(--dark-border);display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+      <div style="width:8px;height:8px;border-radius:50%;background:#4ade80;"></div>
+      <span style="font-family:'Amiri',serif;font-size:1rem;font-weight:700;color:var(--gold-light);">🌐 البلديات التي تمتلك منصات إلكترونية</span>
+      <span style="margin-right:auto;background:rgba(0,168,78,0.12);border:1px solid rgba(0,168,78,0.25);color:#4ade80;font-size:0.7rem;font-weight:700;padding:4px 12px;border-radius:20px;">متاحة للعموم</span>
+    </div>
+    <div style="padding:16px 20px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;" id="contact-muni-links"></div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- ════ MUNICIPALITY MODAL ════ -->
+<div class="modal-overlay" id="muni-modal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2 id="modal-title">بلدية</h2>
+      <div class="muni-live-stats" id="modal-live-stats" style="display:none;">
+        <div class="mls"><div class="mv" id="mls-total">—</div><div class="ml">عملية</div></div>
+        <div class="mls"><div class="mv" id="mls-ongoing" style="color:#4ade80;">—</div><div class="ml">جارية</div></div>
+        <div class="mls"><div class="mv" id="mls-progress" style="color:#a78bfa;">—</div><div class="ml">إنجاز</div></div>
+      </div>
+      <button class="modal-close" onclick="closeMuniModal()">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<!-- ════ OPS LIST MODAL ════ -->
+<div class="ops-list-modal" id="ops-list-modal">
+  <div class="ops-list-box">
+    <div class="ops-list-header">
+      <h3 id="ops-list-title">📋 قائمة العمليات</h3>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+        <span id="ops-list-count" class="muni-count-badge">—</span>
+        <button onclick="closeOpsModal()" style="background:rgba(210,16,52,0.2);border:1px solid rgba(210,16,52,0.4);color:#f87171;border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;">✕</button>
+      </div>
+    </div>
+    <div style="padding:16px 20px;max-height:80vh;overflow-y:auto;" id="ops-list-body"></div>
+  </div>
+</div>
+
+<!-- ════ NOTIFICATION TOASTS ════ -->
+<div id="notif-toast"></div>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="footer-inner">
+    <span class="copy">جميع الحقوق محفوظة</span>
+    <div class="footer-sep"></div>
+    <span class="copy">صالح عمور</span>
+    <div class="footer-sep"></div>
+    <span class="copy">213.799.340.844</span>
+  </div>
+  <p style="font-size:0.76rem;color:#1e3050;margin-top:3px;">منصة متابعة المشاريع التنموية — ولاية جيجل — الجمهورية الجزائرية الديمقراطية الشعبية</p>
+</footer>
+
+<!-- ════ SCRIPTS — بالترتيب ════ -->
+<script src="data.js"></script>
+<script src="firebase.js"></script>
+<script src="home.js"></script>
+<script src="dashboard.js"></script>
+<script src="municipalities.js"></script>
+<script src="projects.js"></script>
+<script src="statistics.js"></script>
+<script src="utils.js"></script>
+<!-- ════ SPA NAVIGATION — يجب أن يكون آخر سكريبت دائماً ════ -->
+<script src="app.js"></script>
+
+</body>
+</html>
