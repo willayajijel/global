@@ -18,10 +18,10 @@ const MUNICIPALITIES=[
   {id:'shahna',  name:'الشحنة',              daira:'taher',     hasData:true,  url:'https://willayajijel.github.io/chahna/'},
   {id:'busif',   name:'بوسيف أولاد عسكر',   daira:'taher',     hasData:true,  url:'https://willayajijel.github.io/boucifouledaskeur/'},
   // ── دائرة الشقفة ──
-  {id:'chaqfa',  name:'الشقفة',              daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/tech_chekfa/'},
-  {id:'qanar',   name:'القنار نشفي',         daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/tech_elkennar/'},
-  {id:'borjthr', name:'برج الطهر',           daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/bordjtahar/'},
-  {id:'sidiazz', name:'سيدي عبد العزيز',    daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/tech_sidiAbdelaziz/'},
+  {id:'chaqfa',  name:'الشقفة',              daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/chekfa/'},
+  {id:'qanar',   name:'القنار نشفي',         daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/elkennar/'},
+  {id:'borjthr', name:'برج الطهر',           daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/bordjthar/'},
+  {id:'sidiazz', name:'سيدي عبد العزيز',    daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/sidiAbdelaziz/'},
   // ── دائرة الميلية ──
   {id:'milia',   name:'الميلية',             daira:'milia',     hasData:true,  url:'https://willayajijel.github.io/tech_elmilia/'},
   {id:'awlyhy',  name:'أولاد يحيى خدروش',   daira:'milia',     hasData:true,  url:'https://willayajijel.github.io/tech_ouledYahia/'},
