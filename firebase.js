@@ -30,6 +30,88 @@ const MUNI_YEAR_COLLECTIONS={
     2022:'BordjThar_operations_2022',2023:'BordjThar_operations_2023',
     2024:'BordjThar_operations_2024',2025:'BordjThar_operations_2025',2026:'BordjThar_operations_2026'
   },
+
+  // ── البلديات الجديدة — تمت الإضافة ──
+  'jijel':{
+    2022:'Jijel_operations_2022',2023:'Jijel_operations_2023',
+    2024:'Jijel_operations_2024',2025:'Jijel_operations_2025',2026:'Jijel_operations_2026'
+  },
+  'taher':{
+    2022:'Taher_operations_2022',2023:'Taher_operations_2023',
+    2024:'Taher_operations_2024',2025:'Taher_operations_2025',2026:'Taher_operations_2026'
+  },
+  'shahna':{
+    2022:'Chahna_operations_2022',2023:'Chahna_operations_2023',
+    2024:'Chahna_operations_2024',2025:'Chahna_operations_2025',2026:'Chahna_operations_2026'
+  },
+  'chaqfa':{
+    2022:'Chekfa_operations_2022',2023:'Chekfa_operations_2023',
+    2024:'Chekfa_operations_2024',2025:'Chekfa_operations_2025',2026:'Chekfa_operations_2026'
+  },
+  'qanar':{
+    2022:'ElKennarNouchfi_operations_2022',2023:'ElKennarNouchfi_operations_2023',
+    2024:'ElKennarNouchfi_operations_2024',2025:'ElKennarNouchfi_operations_2025',2026:'ElKennarNouchfi_operations_2026'
+  },
+  'sidiazz':{
+    2022:'SidiAbdelaziz_operations_2022',2023:'SidiAbdelaziz_operations_2023',
+    2024:'SidiAbdelaziz_operations_2024',2025:'SidiAbdelaziz_operations_2025',2026:'SidiAbdelaziz_operations_2026'
+  },
+  'milia':{
+    2022:'ElMilia_operations_2022',2023:'ElMilia_operations_2023',
+    2024:'ElMilia_operations_2024',2025:'ElMilia_operations_2025',2026:'ElMilia_operations_2026'
+  },
+  'awlyhy':{
+    2022:'OuledYahiaKhedrouche_operations_2022',2023:'OuledYahiaKhedrouche_operations_2023',
+    2024:'OuledYahiaKhedrouche_operations_2024',2025:'OuledYahiaKhedrouche_operations_2025',2026:'OuledYahiaKhedrouche_operations_2026'
+  },
+  'ansar':{
+    2022:'ElAncer_operations_2022',2023:'ElAncer_operations_2023',
+    2024:'ElAncer_operations_2024',2025:'ElAncer_operations_2025',2026:'ElAncer_operations_2026'
+  },
+  'burawi':{
+    2022:'BouraouiBelhadef_operations_2022',2023:'BouraouiBelhadef_operations_2023',
+    2024:'BouraouiBelhadef_operations_2024',2025:'BouraouiBelhadef_operations_2025',2026:'BouraouiBelhadef_operations_2026'
+  },
+  'jmaa':{
+    2022:'DjemaaBeniHabibi_operations_2022',2023:'DjemaaBeniHabibi_operations_2023',
+    2024:'DjemaaBeniHabibi_operations_2024',2025:'DjemaaBeniHabibi_operations_2025',2026:'DjemaaBeniHabibi_operations_2026'
+  },
+  'khayri':{
+    2022:'KheiriOuedAdjoul_operations_2022',2023:'KheiriOuedAdjoul_operations_2023',
+    2024:'KheiriOuedAdjoul_operations_2024',2025:'KheiriOuedAdjoul_operations_2025',2026:'KheiriOuedAdjoul_operations_2026'
+  },
+  'salma':{
+    2022:'SelmaBenziada_operations_2022',2023:'SelmaBenziada_operations_2023',
+    2024:'SelmaBenziada_operations_2024',2025:'SelmaBenziada_operations_2025',2026:'SelmaBenziada_operations_2026'
+  },
+  'jimila':{
+    2022:'Djimla_operations_2022',2023:'Djimla_operations_2023',
+    2024:'Djimla_operations_2024',2025:'Djimla_operations_2025',2026:'Djimla_operations_2026'
+  },
+  'taksna':{
+    2022:'Texenna_operations_2022',2023:'Texenna_operations_2023',
+    2024:'Texenna_operations_2024',2025:'Texenna_operations_2025',2026:'Texenna_operations_2026'
+  },
+  'qawus':{
+    2022:'Kaous_operations_2022',2023:'Kaous_operations_2023',
+    2024:'Kaous_operations_2024',2025:'Kaous_operations_2025',2026:'Kaous_operations_2026'
+  },
+  'satara':{
+    2022:'Settara_operations_2022',2023:'Settara_operations_2023',
+    2024:'Settara_operations_2024',2025:'Settara_operations_2025',2026:'Settara_operations_2026'
+  },
+  'ghbala':{
+    2022:'Ghebala_operations_2022',2023:'Ghebala_operations_2023',
+    2024:'Ghebala_operations_2024',2025:'Ghebala_operations_2025',2026:'Ghebala_operations_2026'
+  },
+  'sidimaruf':{
+    2022:'SidiMaarouf_operations_2022',2023:'SidiMaarouf_operations_2023',
+    2024:'SidiMaarouf_operations_2024',2025:'SidiMaarouf_operations_2025',2026:'SidiMaarouf_operations_2026'
+  },
+  'awlrba':{
+    2022:'OuledRabah_operations_2022',2023:'OuledRabah_operations_2023',
+    2024:'OuledRabah_operations_2024',2025:'OuledRabah_operations_2025',2026:'OuledRabah_operations_2026'
+  },
   'boudria':{
     2022:'BoudriaaBenYadjis_operations_2022',2023:'BoudriaaBenYadjis_operations_2023',
     2024:'BoudriaaBenYadjis_operations_2024',2025:'BoudriaaBenYadjis_operations_2025',2026:'BoudriaaBenYadjis_operations_2026'
