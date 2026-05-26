@@ -32,19 +32,19 @@ const MUNICIPALITIES=[
   {id:'khayri',  name:'خيري وادي العجول',   daira:'ansar',     hasData:true,  url:'https://willayajijel.github.io/kheiri/'},
   // ── دائرة العوانة ──
   {id:'awana',   name:'العوانة',             daira:'awana',     hasData:true,  url:'https://willayajijel.github.io/elaouana/'},
-  {id:'salma',   name:'سلمى بن زيادة',      daira:'awana',     hasData:true,  url:'https://willayajijel.github.io/tech_selma/'},
+  {id:'salma',   name:'سلمى بن زيادة',      daira:'awana',     hasData:true,  url:'https://willayajijel.github.io/selma/'},
   // ── دائرة جيملة ──
-  {id:'jimila',  name:'جيملة',              daira:'jimila',    hasData:true,  url:'https://willayajijel.github.io/tech_djimla/'},
+  {id:'jimila',  name:'جيملة',              daira:'jimila',    hasData:true,  url:'https://willayajijel.github.io/djimla/'},
   {id:'boudria', name:'بودريعة بن ياجيس',   daira:'jimila',    hasData:true,  url:'https://willayajijel.github.io/boudriaabenyadjis/'},
   // ── دائرة تاكسنة ──
-  {id:'taksna',  name:'تاكسنة',             daira:'taksna',    hasData:true,  url:'https://willayajijel.github.io/tech_texenna/'},
-  {id:'qawus',   name:'قاوس',               daira:'taksna',    hasData:true,  url:'https://willayajijel.github.io/tech_kaous/'},
+  {id:'taksna',  name:'تاكسنة',             daira:'taksna',    hasData:true,  url:'https://willayajijel.github.io/texenna/'},
+  {id:'qawus',   name:'قاوس',               daira:'taksna',    hasData:true,  url:'https://willayajijel.github.io/kaous/'},
   // ── دائرة السطارة ──
-  {id:'satara',  name:'السطارة',             daira:'satara',    hasData:true,  url:'https://willayajijel.github.io/tech_settara/'},
-  {id:'ghbala',  name:'غبالة',              daira:'satara',    hasData:true,  url:'https://willayajijel.github.io/tech_ghebala/'},
+  {id:'satara',  name:'السطارة',             daira:'satara',    hasData:true,  url:'https://willayajijel.github.io/settara/'},
+  {id:'ghbala',  name:'غبالة',              daira:'satara',    hasData:true,  url:'https://willayajijel.github.io/ghebala/'},
   // ── دائرة سيدي معروف ──
-  {id:'sidimaruf',name:'سيدي معروف',        daira:'sidimaruf', hasData:true,  url:'https://willayajijel.github.io/tech_sidimaarouf/'},
-  {id:'awlrba',  name:'أولاد رابح',         daira:'sidimaruf', hasData:true,  url:'https://willayajijel.github.io/tech_ouledrabah/'},
+  {id:'sidimaruf',name:'سيدي معروف',        daira:'sidimaruf', hasData:true,  url:'https://willayajijel.github.io/sidimaarouf/'},
+  {id:'awlrba',  name:'أولاد رابح',         daira:'sidimaruf', hasData:true,  url:'https://willayajijel.github.io/ouledrabah/'},
   // ── دائرة زيامة منصورية ──
   {id:'ziama',   name:'زيامة المنصورية',    daira:'ziama',     hasData:true,  url:'https://willayajijel.github.io/ziamamansouriah/'},
   {id:'iragn',   name:'إيراقن سويسي',       daira:'ziama',     hasData:true,  url:'https://willayajijel.github.io/eraguene/'},
