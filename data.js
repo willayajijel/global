@@ -13,7 +13,7 @@ const MUNICIPALITIES=[
   {id:'jijel',   name:'جيجل',               daira:'jijel',     hasData:true,  url:'https://willayajijel.github.io/jijel/'},
   // ── دائرة الطاهير ──
   {id:'taher',   name:'الطاهير',             daira:'taher',     hasData:true,  url:'https://willayajijel.github.io/taher/'},
-  {id:'emir',    name:'الأمير عبد القادر',   daira:'taher',     hasData:true,  url:'https://willayajijel.github.io/apc-eak/'},
+  {id:'emir',    name:'الأمير عبد القادر',   daira:'taher',     hasData:true,  url:'https://willayajijel.github.io/emir/'},
   {id:'wajana',  name:'وجانة',               daira:'taher',     hasData:true,  url:'https://willayajijel.github.io/apc-oujana/'},
   {id:'shahna',  name:'الشحنة',              daira:'taher',     hasData:true,  url:'https://willayajijel.github.io/chahna/'},
   {id:'busif',   name:'بوسيف أولاد عسكر',   daira:'taher',     hasData:true,  url:'https://willayajijel.github.io/boucifouledaskeur/'},
