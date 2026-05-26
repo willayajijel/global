@@ -21,15 +21,15 @@ const MUNICIPALITIES=[
   {id:'chaqfa',  name:'الشقفة',              daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/chekfa/'},
   {id:'qanar',   name:'القنار نشفي',         daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/elkennar/'},
   {id:'borjthr', name:'برج الطهر',           daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/bordjthar/'},
-  {id:'sidiazz', name:'سيدي عبد العزيز',    daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/sidiAbdelaziz/'},
+  {id:'sidiazz', name:'سيدي عبد العزيز',    daira:'chaqfa',    hasData:true,  url:'https://willayajijel.github.io/sidiabdelaziz/'},
   // ── دائرة الميلية ──
-  {id:'milia',   name:'الميلية',             daira:'milia',     hasData:true,  url:'https://willayajijel.github.io/tech_elmilia/'},
-  {id:'awlyhy',  name:'أولاد يحيى خدروش',   daira:'milia',     hasData:true,  url:'https://willayajijel.github.io/tech_ouledYahia/'},
+  {id:'milia',   name:'الميلية',             daira:'milia',     hasData:true,  url:'https://willayajijel.github.io/elmilia/'},
+  {id:'awlyhy',  name:'أولاد يحيى خدروش',   daira:'milia',     hasData:true,  url:'https://willayajijel.github.io/ouledyahia/'},
   // ── دائرة العنصر ──
-  {id:'ansar',   name:'العنصر',              daira:'ansar',     hasData:true,  url:'https://willayajijel.github.io/tech_elanser/'},
-  {id:'burawi',  name:'بوراوي بلهادف',       daira:'ansar',     hasData:true,  url:'https://willayajijel.github.io/tech_bouraouiB/'},
-  {id:'jmaa',    name:'الجمعة بني حبيبي',   daira:'ansar',     hasData:true,  url:'https://willayajijel.github.io/tech_djemaa/'},
-  {id:'khayri',  name:'خيري وادي العجول',   daira:'ansar',     hasData:true,  url:'https://willayajijel.github.io/tech_kheiri/'},
+  {id:'ansar',   name:'العنصر',              daira:'ansar',     hasData:true,  url:'https://willayajijel.github.io/elanser/'},
+  {id:'burawi',  name:'بوراوي بلهادف',       daira:'ansar',     hasData:true,  url:'https://willayajijel.github.io/bouraoui/'},
+  {id:'jmaa',    name:'الجمعة بني حبيبي',   daira:'ansar',     hasData:true,  url:'https://willayajijel.github.io/djemaa/'},
+  {id:'khayri',  name:'خيري وادي العجول',   daira:'ansar',     hasData:true,  url:'https://willayajijel.github.io/kheiri/'},
   // ── دائرة العوانة ──
   {id:'awana',   name:'العوانة',             daira:'awana',     hasData:true,  url:'https://willayajijel.github.io/elaouana/'},
   {id:'salma',   name:'سلمى بن زيادة',      daira:'awana',     hasData:true,  url:'https://willayajijel.github.io/tech_selma/'},
